@@ -1,6 +1,6 @@
 # QuestionC
 
-My design for this question has three parts: LRUCache, client, and central server
+My design for this question has three parts: LRUCache, client, and central server and I used RabbitMQ to setup the network
 
 # LRUCache
 LRUCache contains a full implementation of LRU cache, when server starts an LRUCache will be created with capacity and ttl(optional) given by user.
