@@ -1,5 +1,3 @@
-# caroline_xiao_test
-
 # How to run
 ### For QuestionA and QuestionB 
 I wrote input test files for them. You can add new tests and run
