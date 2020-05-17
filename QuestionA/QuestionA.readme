@@ -1,0 +1,14 @@
+# Test cases (the tests in my test file doesn't strictly follow this order)
+
+# Simple cases overlap
+# Simple cases not overlap
+# Include float numbers
+# Negative numbers
+# Input line with end smaller than start
+# Two lines have same start/end
+# Include points (my assumption: points are also considered as overlap)
+
+# Error Checking
+# File reading error
+# Input argument number not correct (too many, too little, empty input)
+# Input argumnet format not correct (cannot convert to float)

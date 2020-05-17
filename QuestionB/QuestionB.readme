@@ -1,0 +1,15 @@
+# Test cases (the tests in my test file doesn't strictly follow this order)
+
+# Simple cases larger than
+# Simple cases smaller than
+# Simple cases equal to
+# Input contains subversion with number more than two digits
+# Input with leading zeros
+# Input with tailing zeros
+# Input are zeros
+
+# Error Checking
+# File reading error
+# Input argument number not correct (too many, too little, empty input)
+# Input contains invalid characters (I assume negative numbers are invalid)
+# Input contains invalid characters but two strings are equal

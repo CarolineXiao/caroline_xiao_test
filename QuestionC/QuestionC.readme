@@ -1,0 +1,29 @@
+# QuestionC
+
+My design for this question has three parts: LRUCache, client, and central server
+
+# LRUCache
+LRUCache contains a full implementation of LRU cache, when server starts an LRUCache will be created with capacity and ttl(optional) given by user.
+
+- There are two data structures used:
+    - The linked list contains all the cache Nodes, and the size of the list is provided by user. The node in head is the
+      least recently used and the node in tail is the most recently used.
+    - The hash map contains key value(item in my case) pairs which makes the running time of searching for a key O(1)
+
+- The LRUCache class has three public methods
+  - get(key): search for the key in hash map, return the value if the key is found in cache and not expired, "Not Found" otherwise
+  - set(key, item): add a node to the cache
+  - printCache: print the current cache (linked list) for testing purpose
+
+# Client
+The client sends request key to server and get corresponding values back from the server
+
+# Central server
+Currently my central server responses clients' requests. If the requesting key is found in cache and not expired, server response with the corresponding value,
+otherwise a random value will be created, stored in cache and gets responsed back to the client.
+
+# Missing functionalities
+My understanding is that there is a central server stored a list of distributed servers
+with their geolocation and hostname. Every time client makes a request to the central server, it decides which server to go according to the geo distance
+between the server and the client. Then the selected server will handle the request from client. The cache in all servers are consistent at all times.
+I tried my best but still couldn't make this work due to my knowledge limitation.
